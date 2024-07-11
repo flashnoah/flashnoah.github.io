@@ -2,12 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: #000000;
+    color: #f0f0f0;
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #808080;
     color: white;
     padding: 1em;
     text-align: center;
@@ -18,7 +18,7 @@ main {
 }
 
 section {
-    background-color: white;
+    background-color: black;
     padding: 1em;
     margin: 1em auto;
     max-width: 600px;
@@ -28,7 +28,7 @@ section {
 footer {
     text-align: center;
     padding: 1em;
-    background-color: #4CAF50;
+    background-color: black;
     color: white;
     position: absolute;
     bottom: 0;
