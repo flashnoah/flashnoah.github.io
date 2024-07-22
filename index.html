@@ -26,24 +26,46 @@
         <h1>Musik</h1>
         <p>Hier findest du eine Auswahl meiner neuesten Mixes und Tracks.</p>
         <a href="https://soundcloud.com/thisisredstone" target="_blank">Zu meinem Soundcloud Account!</a>
-        <br /><br /><br />
+        <br /><br />
+        <audio controls>
+            <source src="sample-music.mp3" type="audio/mp3">
+            Dein Browser unterstützt das Audio-Element nicht.
+        </audio>
+        <br />
+        <br />
         <img src="music.jpg" alt="DJ Weger Music">
     </section>
     <section id="events">
         <h1>Events</h1>
         <p>Schau dir meine kommenden Auftritte an und buche mich für dein nächstes Event!</p>
-        <img src="events.jpg" alt="DJ Weger Events">
+        <div class="carousel">
+            <img src="TML.jpg" alt="Torrowland">
+            <img src="Choachella.jpg" alt="Coachella">
+            <img src="Hausfete.jpg" alt="Hausfete">
+        </div>
     </section>
     <section id="contact">
         <h1>Kontakt</h1>
         <p>Kontaktiere mich für Buchungen und Anfragen:</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br />
+            <label for="message">Nachricht:</label>
+            <textarea id="message" name="message" required></textarea>
+            <br />
+            <button type="submit">Absenden</button>
+        </form>
         <p>Email:</p>
         <a href="mailto:noah.weger123@gmail.com" target="_blank">noah.weger123@gmail.com</a>
         <br/>
         <p>Telefon:</p>
         <a href="tel:+393245810432" target="_blank">324 581 0432</a>
         <br /><br /><br />
-        <p>.</p>            
+        <p>.</p>
     </section>
     <footer>
         <p>&copy; 2024 DJ Weger. All rights reserved.</p>

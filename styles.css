@@ -61,3 +61,35 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+.carousel {
+    display: flex;
+    overflow-x: scroll;
+    gap: 1em;
+}
+
+    .carousel img {
+        width: 300px;
+
+    form label {
+        margin: 0.5em 0 0.2em;
+    }
+
+    form input, form textarea {
+        width: 80%;
+        padding: 0.5em;
+        margin-bottom: 1em;
+    }
+
+    form button {
+        padding: 0.7em 2em;
+        background-color: #555;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+        form button:hover {
+            background-color: #777;
+        }
