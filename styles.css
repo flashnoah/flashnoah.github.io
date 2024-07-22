@@ -23,7 +23,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('header-background.jpg') no-repeat center center/cover;
+    background: url('header-background.jpg') no-repeat center center;
     opacity: 0.2;
     z-index: -1;
 }
