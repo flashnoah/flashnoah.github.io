@@ -104,7 +104,7 @@ form {
             background-color: #777;
         }
 
-/* Popup box BEGIN */
+
     .hover_bkgr_fricc {
         background: rgba(0,0,0,.4);
         cursor: pointer;
@@ -166,5 +166,5 @@ form {
         display: inline-block;
         font-weight: bold;
     }
-/* Popup box BEGIN */
+
 
