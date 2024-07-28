@@ -33,6 +33,7 @@ header h1 {
     margin: 0;
 }
 
+
 .header-logo {
     width: 80%; /* Adjust the width as needed */
     max-width: 1000px; /* Set a maximum width to prevent it from getting too large */
@@ -76,10 +77,12 @@ footer {
     background-color: #333;
     color: #ffffff;
     padding: 1em;
-    position: fixed;
+    position: unset;
     width: 100%;
     bottom: 0;
 }
+
+
 
 .carousel {
     display: flex;
@@ -186,4 +189,39 @@ form {
         font-weight: bold;
     }
 
+.profile {
+    display: flex;
+    flex-direction: column; /* Default layout for narrow screens */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+    padding: 1em;
+}
+
+    .profile img {
+        max-width: 100%;
+        height: auto;
+        max-height: 400px;
+        margin-bottom: 1em; /* Space between the image and text */
+    }
+
+
+
+@media (min-width: 768px) {
+    .profile {
+        flex-direction: row; /* Side by side layout for wide screens */
+        align-items: center; /* Center items vertically */
+        text-align: left; /* Align text to the left */
+        justify-content: center;
+    }
+
+        .profile img {
+            margin-bottom: 0; /* Remove bottom margin for wide screens */
+            margin-right: 5em; /* Space between the image and text */
+            max-width: 50%; /* Adjust width as needed */
+        }
+
+        .profile p {
+            max-width: 50%; /* Adjust width as needed */
+        }
+}
 
