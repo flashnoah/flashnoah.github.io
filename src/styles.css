@@ -40,6 +40,7 @@ header h1 {
     height: auto; /* Maintain aspect ratio */
 }
 
+/* Navigation styles */
 nav {
     background-color: #000000;
     padding: 1em;
@@ -48,8 +49,61 @@ nav {
     width: 100%;
     z-index: 1000;
     display: flex;
-    align-items: center; /* Align items vertically center */
-    justify-content: space-between; /* Space between logo and links */
+    align-items: center;
+    justify-content: space-between; /* Space between logo and hamburger menu */
+}
+
+/* Hide navigation links by default for small screens */
+.nav-links {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+/* Hamburger menu styles */
+.nav-toggle {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1001; /* Ensure it's above other content */
+    position: absolute;
+    right: 1em; /* Align to the right */
+}
+
+.nav-bar {
+    background-color: #ffffff;
+    height: 3px;
+    width: 25px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Show the hamburger menu on small screens */
+@media (max-width: 550px) {
+    .nav-links {
+        display: none; /* Hide navigation links by default */
+        flex-direction: column;
+        align-items: center;
+        background-color: #000000;
+        position: absolute;
+        top: 60px; /* Adjust if necessary */
+        right: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+        .nav-links.show {
+            display: flex;
+        }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    /* Adjust logo position on small screens */
+    nav img.nav-logo {
+        height: 50px; /* Adjust if necessary */
+    }
 }
 
     nav img.nav-logo {
