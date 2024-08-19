@@ -10,3 +10,14 @@ ReactDOM.render(
     </Suspense>,
     document.getElementById('root')
 );
+
+<script>
+    function toggleMenu() {
+    var navLinks = document.getElementById("navLinks");
+    if (navLinks.style.display === "block") {
+        navLinks.style.display = "none";
+    } else {
+        navLinks.style.display = "block";
+    }
+}
+</script>
